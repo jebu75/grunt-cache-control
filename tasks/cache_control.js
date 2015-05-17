@@ -214,6 +214,9 @@ module.exports = function(grunt) {
         grunt.fatal("Unable to write file. Destination needs to be provided via outputDest in options or replace set to true.");
       }
     }
+    
+    // tell grunt this task is done
+    done();
 
     // Iterate over all specified file groups.
 //    this.files.forEach(function(f) {
